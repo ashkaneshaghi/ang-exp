@@ -1,0 +1,23 @@
+<div class="container text-center">
+    <h1 class="text-center mt-3 mb-5">{{ title }}</h1>
+
+    <div *ngFor="let message of messages">
+        <div class="card text-center mb-5">
+            <div class="card-header">
+                Featured
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{ message.title }}</h5>
+                <p class="card-text">{{ message.message }}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-body-secondary">
+                2 days ago
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <router-outlet></router-outlet>
+</div>
